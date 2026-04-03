@@ -15,7 +15,7 @@ export default function Home() {
     const email = form.email.value;
 
     try {
-      const res = await fetch("/api/send", {
+      const res = await fetch("send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
